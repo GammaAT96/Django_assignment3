@@ -1,0 +1,9 @@
+<h1>{{ object.title }}</h1>
+<p>by {{ object.author }} on {{ object.created_at }}</p>
+<hr>
+
+<div>
+  {{ object.content|linebreaks }}
+</div>
+<br>
+<a href="{% url 'blog_list' %}">Back to Blog List</a>
